@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio projects in data analysis, business intelligence, and machine learning.">
-  <title>Data Analyst Portfolio | Projects</title>
+  <meta name="description" content="Selected analytics, forecasting, reporting, and machine learning projects by Loc Nguyen.">
+  <title>Loc Nguyen | Projects</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
   <div class="site-shell">
     <header class="site-header">
       <a class="brand" href="index.html">
-        <span class="brand-mark">DA</span>
+        <span class="brand-mark">LN</span>
         <span class="brand-copy">
           <strong>Loc Nguyen</strong>
           <span>Data Analyst & Data Scientist</span>
@@ -40,9 +40,9 @@
       <section class="page-hero section">
         <div class="section-heading reveal">
           <p class="eyebrow">Projects</p>
-          <h1>Make every project read like a business case, not a homework file.</h1>
+          <h1>Selected analytics and machine learning work across industry and university projects.</h1>
           <p>
-            Swap in your own dashboards, notebooks, screenshots, and GitHub links. Keep the focus on the decision, the method, and the result.
+            These projects highlight a mix of customer analytics, forecasting, anomaly detection, reporting, and operational machine learning. Each one focuses on the business or operational question, the method used, and the outcome delivered.
           </p>
         </div>
       </section>
@@ -54,147 +54,152 @@
               <span>SQL + Python</span>
             </div>
             <div class="project-content">
-              <p class="project-tag">Customer Retention</p>
-              <h2>Churn Prediction and Retention Prioritization</h2>
-              <p>Identified high-risk customer segments and ranked the drivers most associated with churn so the team could focus retention efforts efficiently.</p>
+              <p class="project-tag">Customer Analytics</p>
+              <h2>European Bank Churn Analysis</h2>
+              <p>Built a churn analysis workflow that combined SQL-based RFM segmentation, Power BI dashboards, and tuned gradient boosting to highlight customer retention risk.</p>
               <ul class="project-points">
-                <li>Cleaned subscription, support, and billing data from multiple sources</li>
-                <li>Compared logistic regression and tree-based models for interpretability and performance</li>
-                <li>Translated feature importance into business actions for customer success teams</li>
+                <li>Built SQL-based customer segmentation logic and reporting views to analyse behaviour and churn patterns</li>
+                <li>Tracked experiments with MLflow and tuned XGBoost with Optuna, selecting the best model at 78% overall accuracy</li>
+                <li>Presented insights through Streamlit and stakeholder-friendly visuals for non-technical business users</li>
               </ul>
               <ul class="chip-row">
                 <li>Python</li>
                 <li>SQL</li>
-                <li>scikit-learn</li>
+                <li>Power BI</li>
+                <li>XGBoost</li>
               </ul>
               <div class="project-links">
-                <a href="#">GitHub Repo</a>
-                <a href="#">Case Study</a>
+                <a href="https://github.com/harrykun162/Loc-s-projects-/tree/main/Bank_churn_analysis" target="_blank" rel="noreferrer">GitHub Repo</a>
+                <a href="contact.html">Request Walkthrough</a>
               </div>
             </div>
           </article>
 
           <article class="project-card reveal reveal-delay-1">
             <div class="project-visual visual-amber">
-              <span>Power BI</span>
+              <span>Forecasting</span>
             </div>
             <div class="project-content">
-              <p class="project-tag">Executive Reporting</p>
-              <h2>Sales Funnel and Revenue Performance Dashboard</h2>
-              <p>Built a leadership-ready reporting layer that surfaced pipeline health, conversion rates, and regional performance trends in one view.</p>
+              <p class="project-tag">Retail Forecasting</p>
+              <h2>Rossmann Store Sales Forecast</h2>
+              <p>Led a five-member team through forecasting delivery, using feature engineering and ensemble modeling to improve four-week sales predictions.</p>
               <ul class="project-points">
-                <li>Modeled revenue, pipeline, and win-rate metrics for weekly executive use</li>
-                <li>Created DAX measures and drill-through views for management reporting</li>
-                <li>Improved visibility into lagging segments and rep performance patterns</li>
+                <li>Ran weekly progress reviews and coordinated issue resolution across data transformation and modeling tasks</li>
+                <li>Improved model inputs with Python preprocessing and feature engineering using Pandas</li>
+                <li>Built and optimized a Random Forest model that achieved 95% accuracy in 4-week sales prediction</li>
               </ul>
               <ul class="chip-row">
-                <li>Power BI</li>
-                <li>DAX</li>
-                <li>Excel</li>
+                <li>Python</li>
+                <li>Pandas</li>
+                <li>Random Forest</li>
               </ul>
               <div class="project-links">
-                <a href="#">Dashboard Demo</a>
-                <a href="#">Project Notes</a>
+                <a href="https://github.com/harrykun162/Loc-s-projects-/tree/main/Rossmann%20Store%20Sales%20Forecast" target="_blank" rel="noreferrer">GitHub Repo</a>
+                <a href="contact.html">Discuss Project</a>
               </div>
             </div>
           </article>
 
           <article class="project-card reveal reveal-delay-2">
             <div class="project-visual visual-slate">
-              <span>Forecasting</span>
+              <span>Environmental Data</span>
             </div>
             <div class="project-content">
-              <p class="project-tag">Operations Analytics</p>
-              <h2>Demand Forecasting for Inventory Planning</h2>
-              <p>Estimated future demand to help reduce overstock and stockout risk across product categories with seasonal patterns.</p>
+              <p class="project-tag">Weather Prediction</p>
+              <h2>Bureau of Meteorology Rainfall Forecasting</h2>
+              <p>Collaborated on a time-series and classification project to prepare meteorological data and forecast daily precipitation more reliably.</p>
               <ul class="project-points">
-                <li>Benchmarked naïve, moving average, and time-series approaches</li>
-                <li>Measured forecast performance with interpretable business-facing metrics</li>
-                <li>Documented tradeoffs between accuracy, complexity, and maintenance effort</li>
+                <li>Preprocessed raw weather data through 30-minute resampling and linear interpolation of missing values</li>
+                <li>Engineered daily and monthly aggregates, then analysed rainfall drivers using Matplotlib</li>
+                <li>Compared KNN, Logistic Regression, and Random Forest models, selecting Random Forest at 83% classification accuracy</li>
               </ul>
               <ul class="chip-row">
                 <li>Python</li>
                 <li>Pandas</li>
-                <li>Prophet</li>
+                <li>Matplotlib</li>
+                <li>Random Forest</li>
               </ul>
               <div class="project-links">
-                <a href="#">Notebook</a>
-                <a href="#">Summary</a>
+                <a href="https://github.com/harrykun162/Loc-s-projects-/tree/main/Melbourne%20Rain%20Forecast" target="_blank" rel="noreferrer">GitHub Repo</a>
+                <a href="contact.html">Request Summary</a>
               </div>
             </div>
           </article>
 
           <article class="project-card reveal">
             <div class="project-visual visual-forest">
-              <span>Marketing Mix</span>
+              <span>Computer Vision</span>
             </div>
             <div class="project-content">
-              <p class="project-tag">Marketing Analytics</p>
-              <h2>Campaign Effectiveness and Channel ROI Analysis</h2>
-              <p>Assessed which channels drove the strongest conversion and revenue performance under budget constraints.</p>
+              <p class="project-tag">Traffic Monitoring</p>
+              <h2>ONETASK Traffic Violation Detection Pipeline</h2>
+              <p>Developed and benchmarked detection models for phone-use and seatbelt non-compliance, then automated repeatable experimentation and reporting workflows.</p>
               <ul class="project-points">
-                <li>Unified spend, traffic, and conversion datasets by campaign and channel</li>
-                <li>Analyzed CAC, ROAS, and conversion quality across audience groups</li>
-                <li>Recommended reallocation scenarios based on observed efficiency</li>
+                <li>Benchmarked YOLOv4, YOLO-NAS, and RF-DETR on Linux to inform production model selection</li>
+                <li>Enhanced performance with Red-Fox Optimisation, reaching 94% mAP for seatbelt detection and 82% for phone detection</li>
+                <li>Built an Apache Airflow pipeline to automate training, testing, inference, and visualisation workflows, reducing manual intervention by 30%</li>
               </ul>
               <ul class="chip-row">
-                <li>SQL</li>
-                <li>Tableau</li>
-                <li>Excel</li>
+                <li>PyTorch</li>
+                <li>OpenCV</li>
+                <li>Apache Airflow</li>
+                <li>Linux</li>
               </ul>
               <div class="project-links">
-                <a href="#">Dashboard</a>
-                <a href="#">Write-up</a>
+                <a href="resume.html">See Experience</a>
+                <a href="contact.html">Request Details</a>
               </div>
             </div>
           </article>
 
           <article class="project-card reveal reveal-delay-1">
             <div class="project-visual visual-coral">
-              <span>Experimentation</span>
+              <span>NLP + BI</span>
             </div>
             <div class="project-content">
-              <p class="project-tag">Product Analytics</p>
-              <h2>A/B Test Analysis for Signup Funnel Changes</h2>
-              <p>Measured whether a revised onboarding experience improved conversion without hurting downstream retention quality.</p>
+              <p class="project-tag">Agricultural Quality Monitoring</p>
+              <h2>Constellation Food Product Intelligence</h2>
+              <p>Combined NLP, anomaly detection, and Power BI reporting to improve product data extraction and monitor abnormal temperature patterns in agricultural supply chains.</p>
               <ul class="project-points">
-                <li>Defined guardrail and success metrics before evaluating results</li>
-                <li>Used hypothesis testing and confidence intervals for interpretation</li>
-                <li>Presented the decision with caveats and follow-up recommendations</li>
+                <li>Developed a BERT-based question answering system that achieved 95% accuracy when extracting expiry dates and net weights</li>
+                <li>Built an Isolation Forest model that reached 99% accuracy for abnormal temperature pattern detection</li>
+                <li>Created Power BI reports and Random Forest feature importance analysis to support clearer stakeholder decision-making</li>
               </ul>
               <ul class="chip-row">
                 <li>Python</li>
-                <li>Statistics</li>
-                <li>Jupyter</li>
+                <li>BERT</li>
+                <li>Power BI</li>
+                <li>Isolation Forest</li>
               </ul>
               <div class="project-links">
-                <a href="#">Analysis</a>
-                <a href="#">Slides</a>
+                <a href="resume.html">See Experience</a>
+                <a href="contact.html">Request Details</a>
               </div>
             </div>
           </article>
 
           <article class="project-card reveal reveal-delay-2">
             <div class="project-visual visual-navy">
-              <span>Data Quality</span>
+              <span>Operations Reporting</span>
             </div>
             <div class="project-content">
-              <p class="project-tag">Analytics Engineering</p>
-              <h2>Reusable KPI Layer and Data Validation Checks</h2>
-              <p>Created a more reliable reporting foundation by standardizing definitions and flagging anomalies before dashboards updated.</p>
+              <p class="project-tag">Data Quality & Trend Reporting</p>
+              <h2>ONETASK Enforcement Data Review and Audit</h2>
+              <p>Supported daily traffic enforcement operations by reviewing high-volume image data, auditing label quality, and surfacing reporting trends for internal teams.</p>
               <ul class="project-points">
-                <li>Documented metric logic for revenue, churn, and active-user reporting</li>
-                <li>Added validation checks for null spikes, duplicates, and sudden shifts</li>
-                <li>Reduced confusion caused by inconsistent definitions across teams</li>
+                <li>Reviewed around 4,000 traffic enforcement images per day to produce true-positive and false-negative statistics</li>
+                <li>Ran monthly Excel-based data quality audits that reduced misclassification by 20%</li>
+                <li>Created visual summaries of offence trends by highway and camera location for operational stakeholders</li>
               </ul>
               <ul class="chip-row">
-                <li>SQL</li>
-                <li>dbt-style thinking</li>
-                <li>Git</li>
+                <li>Excel</li>
+                <li>Data Quality</li>
+                <li>Reporting</li>
+                <li>Operations Analytics</li>
               </ul>
               <div class="project-links">
-                <a href="#">Repository</a>
-                <a href="#">Documentation</a>
+                <a href="resume.html">See Experience</a>
+                <a href="contact.html">Request Details</a>
               </div>
             </div>
           </article>
@@ -203,8 +208,8 @@
     </main>
 
     <footer class="site-footer">
-      <p>Tip: three excellent projects beats ten shallow ones.</p>
-      <p>&copy; <span data-current-year></span> Your Name. Built for GitHub Pages.</p>
+      <p>Three strong projects with clear outcomes usually speak louder than a long undifferentiated list.</p>
+      <p>&copy; <span data-current-year></span> Loc Nguyen. Built for GitHub Pages.</p>
     </footer>
   </div>
 </body>
