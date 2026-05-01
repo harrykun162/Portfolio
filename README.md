@@ -5,7 +5,6 @@ This repository contains a static multi-page portfolio designed for GitHub Pages
 ## Included pages
 
 - `index.html`: homepage and featured work
-- `about.html`: professional story and strengths
 - `projects.html`: portfolio case studies
 - `resume.html`: resume summary and experience snapshot
 - `contact.html`: recruiter-friendly contact page
@@ -103,7 +102,6 @@ Your live URL will be:
 ```text
 Portfolio/
 |-- index.html
-|-- about.html
 |-- projects.html
 |-- resume.html
 |-- contact.html
