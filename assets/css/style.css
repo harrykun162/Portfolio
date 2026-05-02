@@ -541,6 +541,10 @@ a.button {
   align-items: start;
 }
 
+.two-column > .reveal {
+  margin-left: 2rem;
+}
+
 .stacked-cards {
   display: grid;
   gap: 1rem;
