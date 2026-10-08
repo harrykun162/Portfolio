@@ -1,157 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Aaron is a Melbourne-based data analyst and data scientist with First Class Honours from Monash University and hands-on analytics, reporting, and machine learning experience.">
-  <title> Aaron Nguyen | Data Analyst Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Aaron Nguyen is a Melbourne-based data analyst with experience in dashboards, reporting, and predictive modelling.">
+  <title>Aaron Nguyen | Data Analyst Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <script defer src="assets/js/script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/astro-zen-preview.css">
 </head>
 <body>
-  <div class="site-shell">
-    <header class="site-header">
-      <a class="brand" href="index.html">
-        <span class="brand-mark">LN</span>
-        <span class="brand-copy">
-          <strong>Aaron Nguyen</strong>
-          <span>Data Analyst & Data Scientist</span>
-        </span>
-      </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span class="sr-only">Toggle navigation</span>
-      </button>
-      <nav id="site-nav" class="site-nav" aria-label="Primary">
-        <a class="is-active" href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="resume.html">Resume</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </header>
+  <header class="topbar">
+    <a class="wordmark" href="#top" aria-label="Aaron Nguyen home">AN<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#about">About</a>
+    </nav>
+    <a class="contact-pill" href="mailto:aaronnguyen162@gmail.com">Get in touch <span>↗</span></a>
+  </header>
 
-    <main>
-      <section class="hero section">
-        <div class="hero-copy reveal">
-          <h1>Hi, I'm Aaron.</h1>
-          <p class="hero-summary">
-            Welcome to my portfolio!
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="projects.html">View Projects</a>
-            <a class="button button-secondary" href="resume.html">See Resume</a>
-          </div>
-          <ul class="inline-metrics" aria-label="Professional highlights">
-            <li><strong>H1</strong><span>First Class Honours at Monash University</span></li>
-            <li><strong>3 Roles</strong><span>Internship and operations experience</span></li>
-            <li><strong>94%-99%</strong><span>Strong model and analytics outcomes</span></li>
-          </ul>
+  <main id="top">
+    <section class="intro wrap">
+      <div class="intro-copy">
+        <p class="kicker">DATA ANALYST · MELBOURNE, AUSTRALIA</p>
+        <h1>Aaron Nguyen</h1>
+        <p class="role">Data Analyst</p>
+        <p class="lead">I turn complex operational data into clear reporting, practical machine learning, and decisions teams can act on.</p>
+        <div class="intro-actions">
+          <a class="button dark" href="mailto:aaronnguyen162@gmail.com">Get in touch <span>↗</span></a>
+          <a class="button light" href="assets/docs/Aaron_Nguyen_Resume.pdf" target="_blank" rel="noreferrer">View CV <span>↗</span></a>
+          <a class="social-link" href="https://www.linkedin.com/in/locnguyen2/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          <a class="social-link" href="https://github.com/harrykun162/Loc-s-projects-" target="_blank" rel="noreferrer">GitHub ↗</a>
         </div>
+      </div>
+      <img class="avatar" src="assets/images/aaron-nguyen-avatar.png" alt="Portrait of Aaron Nguyen" width="400" height="400">
+      <a class="scroll-cue" href="#experience">Scroll to explore <span>↓</span></a>
+    </section>
 
-      </section>
-
-      <section class="section">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Featured work</p>
-          <h2>Projects and internships that show technical depth and business value.</h2>
-        </div>
-        <div class="feature-grid">
-          <article class="project-preview reveal">
-            <p class="project-tag">Customer Analytics</p>
-            <h3>European Bank Churn Analysis</h3>
-            <p>Built SQL-based RFM segmentation, Power BI dashboards, and an optimized XGBoost workflow to surface churn risk and support retention strategy.</p>
-            <ul class="chip-row">
-              <li>Python</li>
-              <li>SQL</li>
-              <li>XGBoost</li>
+    <section class="wrap section" id="experience">
+      <div class="section-title"><p class="kicker">CAREER</p><h2>Experience</h2></div>
+      <div class="timeline">
+        <article class="job">
+          <div class="job-meta"><span>Mar 2023 — Current</span><span>Docklands, VIC</span></div>
+          <div><h3>OneTask</h3><p class="job-role">Data Analyst</p>
+            <ul>
+              <li>Developed Power BI dashboards analysing cost-versus-performance trade-offs across 20 systems, supporting resourcing and reporting decisions for senior and engineering stakeholders.</li>
+              <li>Designed and helped deploy a computer-vision detection model in Python, lifting detection performance by 8% over the prior solution and flagging 4,218 potential infringement cases worth an estimated $2.64M.</li>
+              <li>Automated a weekly recurring pipeline to reduce manual data processing and improve reproducibility across training runs.</li>
+              <li>Conducted 3,500+ daily AI-processed records reviews in Excel, feeding accuracy KPIs into a shared Google Sheets for senior stakeholder reporting.</li>
+              <li>Collaborated with engineering teams via Outlook to troubleshoot system issues and authored clear incident reports for clients, eliminating subsequent data loss and streamlining the recovery of missing operational hours.</li>
             </ul>
-          </article>
-          <article class="project-preview reveal reveal-delay-1">
-            <p class="project-tag">Computer Vision</p>
-            <h3>Traffic Violation Detection Pipeline</h3>
-            <p>Benchmarked YOLOv4, YOLO-NAS, and RF-DETR models, then automated training and inference workflows with Apache Airflow.</p>
-            <ul class="chip-row">
-              <li>PyTorch</li>
-              <li>Airflow</li>
-              <li>Linux</li>
-            </ul>
-          </article>
-          <article class="project-preview reveal reveal-delay-2">
-            <p class="project-tag">Forecasting</p>
-            <h3>Rossmann Store Sales Forecast</h3>
-            <p>Led a five-member team through forecasting delivery, feature engineering, and model optimization that achieved 95% accuracy over a four-week horizon.</p>
-            <ul class="chip-row">
-              <li>Python</li>
-              <li>Random Forest</li>
-              <li>Pandas</li>
-            </ul>
-          </article>
-        </div>
-        <div class="section-actions reveal">
-          <a class="button button-secondary" href="projects.html">Browse All Projects</a>
-        </div>
-      </section>
-
-      <section class="section section-accent">
-        <div class="two-column">
-          <div class="reveal">
-            <p class="eyebrow">What I bring</p>
-            <h2>Applied analytics that connects modeling, reporting, and operational decisions.</h2>
-            <p>
-              Across internships and portfolio work, I have combined data cleaning, experimentation, visualisation, and machine learning to answer practical questions. My strongest work sits at the intersection of technical rigor and communication that decision-makers can actually use.
-            </p>
           </div>
-          <div class="stacked-cards reveal reveal-delay-1">
-            <article class="insight-card">
-              <h3>Multi-Source Data Handling</h3>
-              <p>Cleaning, validating, and combining operational, behavioural, and sensor data into reliable analytical inputs.</p>
-            </article>
-            <article class="insight-card">
-              <h3>Stakeholder Reporting</h3>
-              <p>Designing Power BI visuals, summaries, and narratives that help technical findings land with non-technical audiences.</p>
-            </article>
-            <article class="insight-card">
-              <h3>Applied Machine Learning</h3>
-              <p>Using forecasting, anomaly detection, NLP, and computer vision when the method clearly supports the business goal.</p>
-            </article>
+        </article>
+        <article class="job">
+          <div class="job-meta"><span>Jul 2024 — Nov 2024</span><span>Melbourne, VIC</span></div>
+          <div><h3>Constellation Technologies</h3><p class="job-role">Data Analytics Intern</p>
+            <ul>
+              <li>Built a data extraction model in Python to capture food-label details from different suppliers, powering an app that delivers instant insight to clients.</li>
+              <li>Developed a machine-learning anomaly-detection solution to identify extreme data points in temperature readings, supporting operational forecasting and product quality assurance.</li>
+              <li>Improved Power BI dashboards and reporting with root-cause analysis to explain factors driving redundant goods costs, uncovering cost variances that support pricing strategies.</li>
+            </ul>
           </div>
-        </div>
-      </section>
+        </article>
+      </div>
+      <div class="section-title education-title"><p class="kicker">EDUCATION</p><h2>Education</h2></div>
+      <div class="education"><strong>Monash University</strong><span>Bachelor of Applied Data Science Advanced · First Class Honours · Dec 2025</span></div>
+    </section>
 
-      <section class="section">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Core toolkit</p>
-          <h2>Technical strengths shaped by real project delivery.</h2>
-        </div>
-        <div class="tool-grid">
-          <article class="tool-card reveal">
-            <h3>Analysis</h3>
-            <p>Python, R, Pandas, scikit-learn, Matplotlib</p>
-          </article>
-          <article class="tool-card reveal reveal-delay-1">
-            <h3>Data & Reporting</h3>
-            <p>SQL, Excel, Power BI, dashboard development, stakeholder reporting</p>
-          </article>
-          <article class="tool-card reveal reveal-delay-2">
-            <h3>ML & Experimentation</h3>
-            <p>XGBoost, Random Forest, Isolation Forest, BERT, YOLO model benchmarking</p>
-          </article>
-          <article class="tool-card reveal reveal-delay-3">
-            <h3>Workflow & Tools</h3>
-            <p>Apache Airflow, MLflow, Git, Docker, Linux, Streamlit</p>
-          </article>
-        </div>
-      </section>
-    </main>
+    <section class="projects-band" id="projects"><div class="wrap">
+      <div class="section-title"><p class="kicker">SELECTED WORK</p><h2>Featured Projects</h2><p class="section-copy">A few projects from the portfolio, presented as compact cards with a direct path to the code.</p></div>
+      <div class="project-grid">
+        <article class="project-card"><a class="project-image" href="assets/images/project-bank-churn.png" target="_blank" rel="noreferrer" aria-label="Open the full Bank Churn dashboard snapshot"><img src="assets/images/project-bank-churn.png" alt="Bank Churn Analysis dashboard with RFM customer segments, churn rates, and geography and gender breakdowns" width="1428" height="804"><span>Open full dashboard ↗</span></a><div class="project-body"><p class="kicker">CUSTOMER ANALYTICS</p><h3>Bank Churn Analysis</h3><ul class="project-points"><li>Built RFM segmentation logic in SQL on a 10,000-customer dataset and developed Power BI dashboards visualising churn risk and retention trends, delivering clear recommendations for each customer segment.</li><li>Spotted a counter-intuitive trend where the most engaged customers were the ones most likely to churn, translating findings into clear insights for stakeholders.</li><li>Tracked and fine-tuned different model versions using Python, deploying the best-performing XGBoost model via Streamlit to generate real-time forecasts.</li></ul><div class="tags"><span>SQL</span><span>Python</span><span>Power BI</span><span>XGBoost</span></div><a class="project-link" href="https://github.com/harrykun162/Loc-s-projects-/tree/main/Bank_churn_analysis" target="_blank" rel="noreferrer">View source <span>↗</span></a></div></article>
+        <article class="project-card"><a class="project-image" href="assets/images/project-sales-forecast.png" target="_blank" rel="noreferrer" aria-label="Open the full sales forecasting charts"><img src="assets/images/project-sales-forecast.png" alt="Sales forecasting analysis charts showing distributions for customers, open days, promotions, holidays, dates, and sales per customer" width="1232" height="445"><span>Open full analysis ↗</span></a><div class="project-body"><p class="kicker">RETAIL FORECASTING</p><h3>Sales Forecasting Project</h3><ul class="project-points"><li>Led a five-member team through the full data lifecycle, running weekly team meetings and supervisor updates to communicate progress and manage competing priorities.</li><li>Applied K-means segmentation to investigate the effect of promotion and customer data on sales, and validated sales predictions over a 4-week horizon using tree-based methods.</li></ul><div class="tags"><span>Python</span><span>K-means</span><span>Tree-based models</span></div><a class="project-link" href="https://github.com/harrykun162/Loc-s-projects-/tree/main/Rossmann%20Store%20Sales%20Forecast" target="_blank" rel="noreferrer">View source <span>↗</span></a></div></article>
+        <article class="project-card"><a class="project-image" href="assets/images/project-melbourne-rainfall.png" target="_blank" rel="noreferrer" aria-label="Open the full Melbourne rainfall analysis"><img src="assets/images/project-melbourne-rainfall.png" alt="Melbourne rainfall analysis notebook with a monthly precipitation line chart and a sample of 2014 weather data" width="1355" height="493"><span>Open full analysis ↗</span></a><div class="project-body"><p class="kicker">TIME SERIES</p><h3>Melbourne Rain Forecast</h3><p>Prepared Bureau of Meteorology data, explored rainfall patterns, and compared classification models for daily precipitation.</p><div class="tags"><span>Python</span><span>Pandas</span><span>Scikit-learn</span></div><a class="project-link" href="https://github.com/harrykun162/Loc-s-projects-/tree/main/Melbourne%20Rain%20Forecast" target="_blank" rel="noreferrer">View source <span>↗</span></a></div></article>
+      </div>
+      <p class="more-projects">More experience-based projects: traffic violation detection, food product intelligence, and enforcement data review are summarized in the CV.</p>
+    </div></section>
 
-    <footer class="site-footer">
-      <p>&copy; <span data-current-year></span> Aaron Nguyen.</p>
-    </footer>
-  </div>
+    <section class="wrap about" id="about"><div><p class="kicker">A LITTLE ABOUT ME</p><h2>Analytics with a practical point of view.</h2></div><div><p>Data analyst with hands-on experience across the full analytics lifecycle, including dashboard design, reporting, and predictive modelling. Identified 4,218 infringement cases worth an estimated $2.64M AUD through model optimisation.</p><div class="skill-groups"><div><strong>Languages</strong><span>Python · SQL · R</span></div><div><strong>Analytics & visualisation</strong><span>Power BI · Excel</span></div><div><strong>Development & collaboration</strong><span>Git · GitHub · Linux · Teams · Outlook</span></div><div><strong>Competencies</strong><span>Root-cause analysis · Reporting & documentation · Non-technical communication · Process automation & continuous improvement · Machine learning</span></div></div><p class="about-links"><a href="assets/docs/Aaron_Nguyen_Resume.pdf" target="_blank" rel="noreferrer">Open full CV ↗</a><a href="mailto:aaronnguyen162@gmail.com">aaronnguyen162@gmail.com ↗</a><a href="tel:+61474202372">+61 474 202 372 ↗</a></p></div></section>
+  </main>
+  <footer class="wrap footer"><span>Aaron Nguyen © 2026</span><span>Data analytics portfolio · CV and project links</span></footer>
 </body>
 </html>
