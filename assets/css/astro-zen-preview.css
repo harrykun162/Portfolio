@@ -81,8 +81,8 @@ a { color: inherit; text-decoration: none; }
 .job-meta { display: flex; flex-direction: column; gap: 4px; color: #9aacc2; font-size: 11px; padding-top: 5px; }
 .job h3 { font-size: 17px; line-height: 1.35; margin: 0; font-weight: 700; }
 .job-role { margin: 3px 0 13px; color: #a9bed8; font-size: 12px; }
-.job ul, .project-points { padding-left: 18px; margin: 0; color: #aabbd0; font-size: 13px; line-height: 1.8; }
-.job li + li, .project-points li + li { margin-top: 8px; }
+.job ul { padding-left: 18px; margin: 0; color: #aabbd0; font-size: 13px; line-height: 1.8; }
+.job li + li { margin-top: 8px; }
 .education { display: flex; flex-direction: column; gap: 4px; font-size: 13px; }
 .education strong { font-size: 15px; }
 .education span { color: var(--muted); }
@@ -98,11 +98,10 @@ a { color: inherit; text-decoration: none; }
 .project-body { padding: 20px 19px 18px; display: flex; flex-direction: column; flex: 1; }
 .project-body .kicker { font-size: 9px; margin-bottom: 10px; }
 .project-body h3 { font: 500 22px/1.2 var(--serif); letter-spacing: -.025em; margin: 0 0 14px; }
-.project-points { font-size: 11px; line-height: 1.7; padding-left: 16px; }
-.project-body > p:not(.kicker) { font-size: 12px; line-height: 1.7; color: var(--muted); margin: 0 0 16px; }
-.tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 17px; }
+.project-summary { font-size: 12px; line-height: 1.7; color: var(--muted); margin: 0; }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; padding-top: 17px; }
 .tags span, .skill-groups span { font-size: 9px; border: 1px solid #314864; color: #b5c7dc; border-radius: 999px; padding: 4px 8px; }
-.project-link { border-top: 1px solid #2a4059; margin-top: auto; padding-top: 14px; margin-top: 19px; font-size: 11px; font-weight: 700; display: flex; justify-content: space-between; }
+.project-link { border-top: 1px solid #2a4059; margin-top: 19px; padding-top: 14px; font-size: 11px; font-weight: 700; display: flex; justify-content: space-between; }
 .more-projects { color: var(--muted); font-size: 11px; margin: 22px 0 0; }
 .about { padding: 82px 0; display: grid; grid-template-columns: 1fr 1fr; gap: 65px; border-bottom: 1px solid var(--line); }
 .about h2 { max-width: 390px; }
