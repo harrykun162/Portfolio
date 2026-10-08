@@ -90,11 +90,8 @@ a { color: inherit; text-decoration: none; }
 .projects-band { background: linear-gradient(180deg, #0b192d, #0d1c31); padding: 74px 0 82px; border-top: 1px solid #172d47; border-bottom: 1px solid #172d47; }
 .project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 17px; }
 .project-card { background: #10223a; border: 1px solid #263d58; border-radius: 9px; overflow: hidden; display: flex; flex-direction: column; }
-.project-image { display: block; position: relative; overflow: hidden; background: #f6f7f9; line-height: 0; }
-.project-image img { display: block; width: 100%; height: auto; transition: transform .22s ease; }
-.project-image:hover img, .project-image:focus-visible img { transform: scale(1.025); }
-.project-image span { position: absolute; right: 10px; bottom: 10px; border: 1px solid rgba(194, 218, 246, .35); border-radius: 999px; background: rgba(8, 20, 38, .88); color: #eaf1fa; padding: 8px 11px; font-size: 10px; line-height: 1.2; font-weight: 700; opacity: .9; }
-.project-image:hover span, .project-image:focus-visible span { background: #16385d; color: #fff; opacity: 1; }
+.project-image { overflow: hidden; background: #f6f7f9; line-height: 0; }
+.project-image img { display: block; width: 100%; height: auto; }
 .project-body { padding: 20px 19px 18px; display: flex; flex-direction: column; flex: 1; }
 .project-body .kicker { font-size: 9px; margin-bottom: 10px; }
 .project-body h3 { font: 500 22px/1.2 var(--serif); letter-spacing: -.025em; margin: 0 0 14px; }
